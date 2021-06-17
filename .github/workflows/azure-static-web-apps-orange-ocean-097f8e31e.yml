@@ -18,6 +18,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+      - uses: hmarr/debug-action@v2
       - name: Build And Deploy
         id: builddeploy
         uses: mishapos/static-web-apps-deploy@v1
